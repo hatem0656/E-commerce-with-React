@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/E-commerce-with-React/static/css/main.12861f5d.chunk.css",
+    "main.js": "/E-commerce-with-React/static/js/main.d69a87ff.chunk.js",
+    "main.js.map": "/E-commerce-with-React/static/js/main.d69a87ff.chunk.js.map",
+    "runtime-main.js": "/E-commerce-with-React/static/js/runtime-main.9d74bf8f.js",
+    "runtime-main.js.map": "/E-commerce-with-React/static/js/runtime-main.9d74bf8f.js.map",
+    "static/js/2.54c0feaa.chunk.js": "/E-commerce-with-React/static/js/2.54c0feaa.chunk.js",
+    "static/js/2.54c0feaa.chunk.js.map": "/E-commerce-with-React/static/js/2.54c0feaa.chunk.js.map",
+    "index.html": "/E-commerce-with-React/index.html",
+    "static/css/main.12861f5d.chunk.css.map": "/E-commerce-with-React/static/css/main.12861f5d.chunk.css.map",
+    "static/js/2.54c0feaa.chunk.js.LICENSE.txt": "/E-commerce-with-React/static/js/2.54c0feaa.chunk.js.LICENSE.txt",
+    "static/media/icon-cart.539ec608.svg": "/E-commerce-with-React/static/media/icon-cart.539ec608.svg",
+    "static/media/icon-close.c3904486.svg": "/E-commerce-with-React/static/media/icon-close.c3904486.svg",
+    "static/media/icon-minus.f5073aa8.svg": "/E-commerce-with-React/static/media/icon-minus.f5073aa8.svg",
+    "static/media/icon-plus.b297868c.svg": "/E-commerce-with-React/static/media/icon-plus.b297868c.svg",
+    "static/media/image-product-1.jpg": "/E-commerce-with-React/static/media/image-product-1.520cc50b.jpg",
+    "static/media/image-product-2.jpg": "/E-commerce-with-React/static/media/image-product-2.c8bb0aac.jpg",
+    "static/media/image-product-3.jpg": "/E-commerce-with-React/static/media/image-product-3.af5c71ba.jpg",
+    "static/media/image-product-4.jpg": "/E-commerce-with-React/static/media/image-product-4.9962862e.jpg",
+    "static/media/logo.4fe9c1e8.svg": "/E-commerce-with-React/static/media/logo.4fe9c1e8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d74bf8f.js",
+    "static/js/2.54c0feaa.chunk.js",
+    "static/css/main.12861f5d.chunk.css",
+    "static/js/main.d69a87ff.chunk.js"
+  ]
+}
