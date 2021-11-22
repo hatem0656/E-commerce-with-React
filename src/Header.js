@@ -1,3 +1,4 @@
+import "./Styles/Header.css";
 import { ReactComponent as CartIcon } from "./images/icon-cart.svg";
 import { ReactComponent as Logo } from "./images/logo.svg";
 import { ReactComponent as ExitIcon } from "./images/icon-close.svg";
@@ -6,7 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+import { store, useGlobalState } from "state-pool";
+store.setState("mobileView", false);
+
 const Header = () => {
+  const [mobileView, setMobileView] = useGlobalState("mobileView");
   const [viewMenu, setView] = useState({});
   const menuStyles = {
     display: "flex",
@@ -21,14 +26,20 @@ const Header = () => {
   };
 
   const handleResize = () => {
-    if (window.innerWidth > 767 && Object.keys(viewMenu).length !== 0) {
-      setView({});
+    if (window.innerWidth > 300 && window.innerWidth < 993) {
+      setMobileView(true);
+      if (Object.keys(viewMenu).length !== 0) {
+        setView({});
+      }
+    } else {
+      setMobileView(false);
     }
   };
   window.addEventListener("resize", handleResize);
 
   return (
     <header>
+      {console.log(mobileView)}
       <div className="container">
         <FontAwesomeIcon
           className="bars"

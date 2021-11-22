@@ -1,3 +1,6 @@
+import "./Styles/ProductDescription.css";
+import AddToCart from "./AddToCart";
+
 const ProductDescription = () => {
   return (
     <div className="product-description">
@@ -13,6 +16,7 @@ const ProductDescription = () => {
         <span className="discount">50%</span>
         <span className="old">$250.00</span>
       </div>
+      <AddToCart />
     </div>
   );
 };

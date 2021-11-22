@@ -1,0 +1,167 @@
+/*----------------- Start Product Preview -------------*/
+.product-preview {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-preview img {
+  cursor: pointer;
+}
+
+.product-preview .current-image {
+  margin-bottom: 15px;
+  flex-basis: 100%;
+  position: relative;
+}
+.product-preview .current-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 13px;
+}
+
+.product-preview .all-images {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.product-preview .all-images div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(90% / 4);
+  height: 90px;
+  border-radius: 13px;
+}
+.product-preview .all-images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.product-preview .all-images div.active {
+  border: 3px solid var(--main-color);
+}
+.product-preview .all-images div.active img,
+.product-preview .all-images img:hover {
+  opacity: 0.5;
+}
+.next,
+.previous {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.next {
+  right: 40px;
+}
+.previous {
+  left: 40px;
+}
+.next:hover svg,
+.previous:hover svg {
+  color: var(--main-color);
+}
+.next svg,
+.previous svg {
+  font-size: 1.5em;
+}
+/*-------------Responsive----------------*/
+
+@media (max-width: 991px) {
+  .product-preview {
+    justify-content: center;
+    width: 100%;
+  }
+  .product-preview img {
+    cursor: auto;
+  }
+  .product-preview .all-images {
+    display: none;
+  }
+  .product-preview .current-image {
+    height: 500px;
+    text-align: center;
+  }
+  .product-preview .current-image img {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .product-preview {
+    transform: scaleX(1.3);
+  }
+  .product-preview .current-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+/*----------------- End Product Preview -------------*/
+
+/*----------------- Start lightBox -------------*/
+.dark-bk {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 900;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0, 70%);
+}
+
+.lightBox {
+  z-index: 1000;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lightBox .product-preview {
+  width: 450px;
+}
+.lightBox .product-preview .current-image {
+  transform: scale(1.1);
+}
+.lightBox .product-preview .all-images {
+  margin-top: 30px;
+  transform: scale(0.9);
+}
+.lightBox .product-preview .all-images div {
+  width: calc(80% / 4);
+}
+.lightBox .product-preview .all-images div {
+  background-color: white;
+}
+.lightBox .exit-lightBox {
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  transform: scale(1.5);
+}
+.lightBox .exit-lightBox path {
+  fill: white;
+  cursor: pointer;
+}
+.lightBox .exit-lightBox path:hover {
+  fill: var(--main-color);
+}
+.lightBox .next,
+.lightBox .previous {
+  top: 40%;
+}
+.lightBox .next {
+  right: -50px;
+}
+.lightBox .previous {
+  left: -50px;
+}
+
+/*----------------- End lightBox -------------*/

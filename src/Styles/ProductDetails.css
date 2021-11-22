@@ -1,0 +1,21 @@
+/*----------------- Start Product Details -------------*/
+.product-details .container {
+  padding: 70px 70px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*-------------Responsive----------------*/
+@media (max-width: 991px) {
+  .product-details .container {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .product-details .container {
+    padding: 10px 25px;
+  }
+}
+/*----------------- End Product Details -------------*/

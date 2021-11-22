@@ -1,3 +1,4 @@
+import "./Styles/ProductDetails.css";
 import ProductDescription from "./ProductDescription";
 import ProductPreview from "./ProductPreview";
 

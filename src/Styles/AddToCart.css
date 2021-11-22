@@ -1,0 +1,80 @@
+/*----------------- Start Add To Cart-------------*/
+.add-to-cart {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.add-to-cart div {
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(223, 64%, 98%);
+  margin-right: 15px;
+}
+.add-to-cart div svg {
+  cursor: pointer;
+}
+.add-to-cart div * {
+  display: block;
+  font-weight: bold;
+}
+.add-to-cart button {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.add-to-cart button:hover {
+  opacity: 0.5;
+}
+.add-to-cart button * {
+  display: block;
+}
+.add-to-cart button span {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.add-to-cart button svg {
+  transform: scale(0.8);
+}
+.add-to-cart button svg path {
+  fill: white;
+}
+
+/*-------------Responsive----------------*/
+
+@media (max-width: 991px) {
+  .add-to-cart {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .add-to-cart button {
+    width: 60%;
+    flex: unset;
+  }
+}
+@media (max-width: 767px) {
+  .add-to-cart {
+    width: 80%;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  .add-to-cart div {
+    width: 100%;
+  }
+
+  .add-to-cart button {
+    width: 100%;
+  }
+}
+/*----------------- End Add To Cart-------------*/

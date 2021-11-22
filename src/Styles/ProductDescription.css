@@ -1,0 +1,92 @@
+/*----------------- Start Product Description-------------*/
+.product-description {
+  margin-top: 60px;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-description .company-name {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: small;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.product-description .product-name {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.product-description .description {
+  margin-top: 30px;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+.product-description .price {
+  margin-top: 20px;
+  position: relative;
+}
+.product-description .price :not(span:last-child) {
+  display: inline-block;
+}
+.product-description .price .actual {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+  letter-spacing: 1.5px;
+}
+.product-description .price .discount {
+  color: var(--main-color);
+  background-color: hsl(25, 100%, 94%);
+  padding: 1px 6px;
+  font-weight: bold;
+  transform: translateY(-4px);
+}
+.product-description .price .old {
+  display: block;
+  margin-top: 10px;
+  text-decoration: line-through;
+  color: hsl(220, 14%, 75%);
+  font-weight: bold;
+}
+/*-------------Responsive----------------*/
+
+@media (max-width: 991px) {
+  .product-description {
+    margin-top: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+  .product-description .product-name {
+    margin-top: 13px;
+  }
+  .product-description .description {
+    margin-top: 10px;
+  }
+
+  .product-description .price .old {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .product-description .product-name {
+    font-size: 35px;
+  }
+  .product-description .description {
+    font-size: 17px;
+  }
+  .product-description .price {
+    width: 100%;
+  }
+  .product-description .price .old {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+}
+/*----------------- End Product Description-------------*/
