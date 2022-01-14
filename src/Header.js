@@ -11,7 +11,6 @@ import { store, useGlobalState } from "state-pool";
 store.setState("mobileView", false);
 
 const Header = () => {
-  let x;
   const [mobileView, setMobileView] = useGlobalState("mobileView");
   const [viewMenu, setView] = useState({});
   const menuStyles = {
